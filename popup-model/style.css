@@ -1,0 +1,168 @@
+/* ==========================================================================
+   Index
+   ========================================================================== 
+    - Utility classes
+        - Spacing
+    - Document Style
+        - container style
+    - Component Style
+        - button style
+*/
+
+/* ==========================================================================
+   Utility classes
+   ========================================================================== */
+
+/* Spacing
+   ========================================================================== */
+
+/* padding */
+.pa-1 {
+  padding: 1rem;
+}
+.pa-50 {
+  padding: 0.5rem;
+}
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* margin */
+.ma-1 {
+  margin: 1rem;
+}
+.ma-50 {
+  margin: 0.5rem;
+}
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+
+/* Component Styling
+   ========================================================================== */
+
+/* round corner */
+.rounded {
+  border-radius: 5px;
+}
+
+/* box shadow */
+.shadow {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* to center align the elements inside the element with this class */
+.display-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* align items to right */
+.display-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* align items with space between them */
+.display-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ==========================================================================
+   Document Style
+   ========================================================================== */
+.wrapper {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+/* ==========================================================================
+   Component Style
+   ========================================================================== */
+
+/* button style */
+.btn {
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #b6b6b6;
+  color: #000000;
+}
+.btn-border {
+  border: 1px solid;
+}
+.border-primary {
+  border-color: #000000;
+}
+.btn:hover {
+  background-color: #8a8a8a;
+  transition: 0.3s;
+}
+
+/* Model style
+   ========================================================================== */
+
+/* model background */
+.model-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+/* model  */
+.model {
+  width: 50rem;
+  background-color: #ffffff;
+  opacity: 100%;
+}
+
+/* model header */
+.model-header {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #000000;
+}
+
+/* close icon */
+.close {
+  background-color: #f74c4c;
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: #f2f2f2;
+  line-height: 0.8rem;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.close:hover {
+  background-color: #ce3535;
+  transition: 0.3s;
+}
