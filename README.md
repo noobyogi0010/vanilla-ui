@@ -23,6 +23,6 @@ There are two ways in which you can contribute:
 - Post an issue that you find in any of the components.
 - Post an issue to request for a specific component that you want to be included in this repo.
 
-See the contribution guide [here](#).
+See the contribution guide [here](./CONTRIBUTING.MD).
 
 ### Thank you for visiting!! 🙃

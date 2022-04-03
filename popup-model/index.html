@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Vanilla UI | Popup Model 🪟</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button
+        type="button"
+        class="btn btn-primary btn-border border-primary"
+        id="open-model"
+      >
+        Open Model
+      </button>
+    </div>
+    <div class="model-wrapper display-center display-none">
+      <div class="model rounded">
+        <div class="model-header display-end pa-1 border-bottom border-light">
+          <span class="close">x</span>
+        </div>
+        <div class="model-content pa-1 border-bottom border-light">
+          This your model. This your time!
+        </div>
+        <div class="model-footer pa-1 display-end">
+          <button type="button" class="btn btn-action btn-border border-action">
+            Okay
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const modelBtn = document.querySelector("#open-model");
+    modelBtn.addEventListener("click", () => {
+      const modelWrapper = document.querySelector(".model-wrapper");
+      modelWrapper.classList.toggle("display-none");
+    });
+
+    const closeBtn = document.querySelector(".close");
+    closeBtn.addEventListener("click", () => {
+      const modelWrapper = document.querySelector(".model-wrapper");
+      modelWrapper.classList.toggle("display-none");
+    });
+
+    const actionBtn = document.querySelector(".btn-action");
+    actionBtn.addEventListener("click", () => {
+      const modelWrapper = document.querySelector(".model-wrapper");
+      modelWrapper.classList.toggle("display-none");
+    });
+  </script>
+</html>
