@@ -3,11 +3,24 @@
    ========================================================================== 
     - Utility classes
         - Spacing
+    - Component Style
     - Document Style
         - container style
     - Component Style
         - button style
 */
+
+/* ==========================================================================
+   Base Style
+   ========================================================================== */
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap");
+}
+html,
+body {
+  font-family: "Montserrat";
+}
 
 /* ==========================================================================
    Utility classes
@@ -53,6 +66,12 @@
 .mr-1 {
   margin-right: 1rem;
 }
+.mt-1 {
+  margin-top: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
 
 /* Component Styling
    ========================================================================== */
@@ -86,6 +105,29 @@
   justify-content: space-between;
 }
 
+.display-none {
+  display: none;
+}
+.display-visible {
+  display: block;
+}
+
+/* apply bottom border to element */
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
+/* border colors */
+.border-primary {
+  border-color: #000000;
+}
+.border-light {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.border-action {
+  border-color: rgba(2, 138, 18, 1);
+}
+
 /* ==========================================================================
    Document Style
    ========================================================================== */
@@ -107,17 +149,22 @@
   cursor: pointer;
 }
 .btn-primary {
-  background-color: #b6b6b6;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+}
+.btn-action {
+  background-color: rgba(0, 209, 24, 0.5);
   color: #000000;
 }
 .btn-border {
   border: 1px solid;
 }
-.border-primary {
-  border-color: #000000;
-}
-.btn:hover {
+.btn-primary:hover {
   background-color: #8a8a8a;
+  transition: 0.3s;
+}
+.btn-action:hover {
+  background-color: rgba(0, 209, 24, 0.8);
   transition: 0.3s;
 }
 
@@ -165,4 +212,13 @@
 .close:hover {
   background-color: #ce3535;
   transition: 0.3s;
+}
+
+/* model content */
+.model-content {
+  font-size: 1rem;
+}
+
+/* model action */
+.model-action {
 }
